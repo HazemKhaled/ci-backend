@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<backend-modrator-permissions>
+	<table>rules</table>
+	<title>صلاحيات المشرفين</title>
+	<pk>id</pk>
+	<main>method</main>
+	<block>backend-menu</block>
+	<option list="1" add="1" delete="1" edit="1" view="0" active="0" search="1" multi_add="0" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<modrate_id>
+			<title>المشرف</title>
+			<view>backend_modrators</view>
+			<input>backend_modrators</input>
+			<search action="backend-modrator-permissions" in="modrate_id" operator="=" search="modrate_id" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</modrate_id>
+		<method>
+			<title>القسم</title>
+			<view>backend_methods</view>
+			<input>backend_methods</input>
+			<search action="backend-modrator-permissions" in="method" operator="=" search="method" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</method>
+		<add>
+			<title>يستطيع الإضافة</title>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<search action="backend-modrator-permissions" in="add" operator="=" search="add" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</add>
+		<edit>
+			<title>يستطيع التعديل</title>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<search action="backend-modrator-permissions" in="edit" operator="=" search="edit" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</edit>
+		<delete>
+			<title>يستطيع الألغاء</title>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<search action="backend-modrator-permissions" in="delete" operator="=" search="delete" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</delete>
+		<active>
+			<title>يستطيع تفعيل السجلات الجديدة</title>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<search action="backend-modrator-permissions" in="active" operator="=" search="active" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</active>
+	</fields>
+</backend-modrator-permissions>

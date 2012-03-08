@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pic_cat>
+	<title>الاقسام</title>
+	<help>هنا ستقوم بأضافة الأقسام، وأهتم بالوصف والكلمات الدالة لانها تساعد على الأنتشار بمحركات البحث.</help>
+	<pk>id</pk>
+	<order>cat</order>
+	<main>name</main>
+	<limit>30</limit>
+	<tab>معرض الصور</tab>
+	<option list="1" add="1" delete="1" edit="1" view="0" active="0" search="1" multi_add="0" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<cat>
+			<title>تابع ل</title>
+			<default>قسم رئيسي</default>
+			<view>select</view>
+			<input>select</input>
+			<values table="pic_cat" value="id" output="name" order="cat asc" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</cat>
+		<child>
+			<title>عناصر القسم</title>
+			<type>0</type>
+			<default>صور هذا القسم</default>
+			<search action="pic" in="cat" operator="=" search="id" />
+			<option list="1" add="0" multi_add="0" edit="0" view="1" search="0" />
+		</child>
+		<name>
+			<title>إسم القسم</title>
+			<input required="1">text</input>
+			<option list="1" add="1" multi_add="0" edit="1" search="1" />
+		</name>
+		<desc>
+			<title>وصف القسم</title>
+			<help>مفيد لمحركات البحث</help>
+			<input>text</input>
+			<option list="0" add="1" edit="1" search="1" multi_add="0" />
+		</desc>
+		<keys>
+			<title>الكلمات الداله</title>
+			<input>text</input>
+			<option list="0" add="1" edit="1" search="1" multi_add="0" />
+		</keys>
+		<pic>
+			<title>صورة</title>
+			<input upload="1">text</input>
+			<option list="0" add="1" edit="1" search="1" multi_add="0" />
+		</pic>
+		<sort>
+			<title>ترتيب القسم</title>
+			<default>0</default>
+			<input>text</input>
+			<option list="1" add="1" edit="1" search="1" multi_add="0" />
+		</sort>
+	</fields>
+</pic_cat>

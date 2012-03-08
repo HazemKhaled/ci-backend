@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vote_node>
+	<title>إجابات التصويت</title>
+	<pk>id</pk>
+	<main>title</main>
+	<limit>50</limit>
+	<order>parent, hits</order>
+	<block>التصويت</block>
+	<option list="1" add="1" delete="1" edit="1" view="0" active="0" search="1" multi_add="1" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<parent>
+			<title>السؤال</title>
+			<view>select</view>
+			<input>select</input>
+			<values table="votes" value="id" output="title" />
+			<search action="votes_node" in="parent" operator="=" search="id" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</parent>
+		<title>
+			<title>العنوان</title>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</title>
+		<hits>
+			<title>مرات التصويت</title>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</hits>
+	</fields>
+</vote_node>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<backend-modrator-settings>
+	<table>modrators</table>
+	<id>id</id>
+	<username>user</username>
+	<password>pass</password>
+	<email>mail</email>
+	<block>backend-menu</block>
+</backend-modrator-settings>

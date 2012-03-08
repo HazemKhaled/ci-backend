@@ -1,0 +1,107 @@
+/**
+ * Free Admin Template right to left CSS
+ *
+ * right to left Style Cascading Style Sheet
+ * you can use it in arabic or farsi or hebrew sites
+ * for full arabic template go to hazemkhaled.com
+ *
+ * @package		Free Admin Template
+ * @author		Hazem Khaled
+ * @email		HazemKhaled@gmail.com
+ * @website		http://HazemKhaled.com
+ */
+body {
+	direction: rtl;
+	font-family: Tahoma, Arial, Verdana
+}
+
+.textarea {
+	font-family: tahoma;
+	font-size: 11px;
+}
+
+optgroup.block {
+	padding-right: 10px;
+	padding-left: 0;
+}
+
+#topmenu,#top-panel,#credits,#topmenu li,.form input,.form .input,#content,.form select,.form textarea,.radio_holder
+	{
+	float: right;
+}
+
+#top-panel ul li a,#sidebar ul li a,#sidebar ul li a:visited {
+	padding-right: 19px;
+	padding-left: 0;
+}
+
+.report,.report_seo,.search,.feed,.house,.folder_table,.addorder,.shipping,.invoices,.manage,.manage_page,.cart,.folder,.promotions,.user,.useradd,.group,.online
+	{
+	background-position: right center
+}
+
+#topmenu li {
+	margin: 0 2px;
+}
+
+#rightnow .reallynow span {
+	float: right;
+	text-align: right
+}
+
+#rightnow .reallynow a {
+	float: left;
+	margin-left: 0;
+	margin-right: 4px;
+	padding-left: 17px ! important;
+	line-height: 16px;
+}
+
+.form label {
+	clear: right;
+	float: right;
+	text-align: left;
+	padding-left: 10px;
+}
+
+#sidebar,#styleswitcher,a.help {
+	float: left;
+}
+
+#sidebar h3 {
+	background-position: right;
+	padding: 2px 19px 2px 0;
+}
+
+#top-panel ul li a,.sidebar ul li a,.sidebar ul li a:visited {
+	background-position: right;
+}
+
+#topmenu li.fixed {
+	float: left;
+	margin-right: 4px;
+	margin-left: 0px;
+}
+
+.form a.help {
+	float: right;
+	margin: 5px 5px 5px -5px;
+}
+
+#box h3 a.back,.box h3 a.edit {
+	float: left;
+	margin-right: 5px;
+	margin-left: 0px;
+}
+
+.pager {
+	direction: ltr;
+}
+
+.pager a,.pager strong {
+	float: right;
+}
+
+#login_form {
+	text-align: left;
+}

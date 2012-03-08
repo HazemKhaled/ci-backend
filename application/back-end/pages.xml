@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pages>
+	<title>تحكم الصفحات</title>
+	<pk>id</pk>
+	<main>title</main>
+	<where>url not in ('media', 'contact')</where>
+	<block>أخرى</block>
+	<option list="1" add="1" delete="1" edit="1" view="1" active="0" search="1" multi_add="0" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<title>
+			<title>العنوان</title>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</title>
+		<descr>
+			<title>وصف الصفحة</title>
+			<help>لتكوين الميتا تاجس</help>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</descr>
+		<keyword>
+			<title>الكلمات الدالة</title>
+			<help>لتكوين الميتا تاجس، أفصل بين كل كلمة بكومة انجليزية</help>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</keyword>
+		<url>
+			<title>الرابط</title>
+			<help>مثلاً إذا كتبت هنا about فسيكون رابط الصفحة hawahome.com/page/about.html</help>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</url>
+		<text>
+			<title>محتوى الصفحة</title>
+			<input wysiwyg="1">textarea</input>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</text>
+	</fields>
+</pages>

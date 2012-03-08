@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<card_comments>
+	<title>التعليقات</title>
+	<pk>id</pk>
+	<order>time ASC</order>
+	<main>name</main>
+	<active>active</active>
+	<link>true</link>
+	<limit>30</limit>
+	<tab>بطاقات</tab>
+	<option list="1" add="0" delete="1" edit="1" view="1" active="1" search="1" multi_add="0" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<parent>
+			<title>الكارت</title>
+			<view>select</view>
+			<input required="1">select</input>
+			<values table="card" value="id" output="title" order="id asc" />
+			<search action="card_comments" in="parent" operator="=" search="parent" />
+			<option list="1" add="1" edit="1" search="1" view="1" multi_add="0" />
+		</parent>
+		<userID>
+			<title>المعلق</title>
+			<view>select</view>
+			<default>زائر</default>
+			<input>select_pop</input>
+			<values table="users" value="id" output="username" order="username asc" />
+			<option list="0" add="1" edit="1" search="1" view="1" multi_add="0" />
+		</userID>
+		<name>
+			<title>الإسم</title>
+			<input>text</input>
+			<option list="1" add="1" edit="1" search="1" view="1" multi_add="0" />
+		</name>
+		<mail>
+			<title>البريد</title>
+			<input>text</input>
+			<option list="0" add="1" edit="1" search="1" view="1" multi_add="0" />
+		</mail>
+		<time>
+			<title>اضيف في</title>
+			<view>timestamp</view>
+			<input>timestamp</input>
+			<option list="1" add="1" edit="0" search="1" view="1" multi_add="0" />
+		</time>
+		<text>
+			<title>التعليق</title>
+			<input required="1">textarea</input>
+			<option list="0" add="1" edit="1" search="1" view="1" multi_add="0" />
+		</text>
+		<active>
+			<title>مفعل</title>
+			<default>1</default>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<option list="1" add="1" edit="1" search="1" view="1" multi_add="0" />
+		</active>
+	</fields>
+</card_comments>
