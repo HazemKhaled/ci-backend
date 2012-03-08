@@ -21,3 +21,7 @@ application/logs
 application/third_party
 *index.html
 *.htaccess
+*.DS_Store
+application/controllers/welcome.php
+application/views/welcome_message.php
+user_guide
