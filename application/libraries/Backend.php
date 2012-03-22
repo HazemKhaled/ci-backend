@@ -106,9 +106,9 @@ class CI_Backend {
 	function style()
 	{
 
-		$stylesDir = dir( APPPATH.'views/backend' );
+		$stylesDir = dir( APPPATH.'modules/admin/views/backend' );
 		while (false !== ($entry = $stylesDir->read())) {
-			if (is_dir( APPPATH.'views/backend' ) && $entry != '.' && $entry != '..' && $entry != '.svn')
+			if (is_dir( APPPATH.'modules/admin/views/backend' ) && $entry != '.' && $entry != '..' && $entry != '.svn')
 				$this->tpl_vars['styles'][] = $entry;
 		}
 		$stylesDir->close();
