@@ -188,17 +188,17 @@ class backend_input extends backend_main_helper
 		{
 			if ( $this->CI->config->item('jQueryUITheme_loaded') != true )
 			{
-				$output.= '<link rel="stylesheet" type="text/css" href="' . $this->CI->config->item('base_url') . 'application/views/backend/js/ui-theme/jquery-ui.css" />';
+				$output.= '<link rel="stylesheet" type="text/css" href="' . $this->CI->config->item('base_url') . 'assets/js/ui-theme/jquery-ui.css" />';
 				$this->CI->config->set_item('jQueryUITheme_loaded', true);
 			}
 			if ( $this->CI->config->item('datepicker_loaded') != true )
 			{
-				$output.= '<script type="text/javascript" src="' . $this->CI->config->item('base_url') . 'application/views/backend/js/jquery-ui-1.8.1.custom.min.js"></script>';
+				$output.= '<script type="text/javascript" src="' . $this->CI->config->item('base_url') . 'assets/js/jquery-ui-1.8.1.custom.min.js"></script>';
 				$this->CI->config->set_item('datepicker_loaded', true);
 
 				if ( $this->CI->config->item('language') == 'arabic' )
 				{
-					$output.= '<script type="text/javascript" src="' . $this->CI->config->item('base_url') . 'application/views/backend/js/jquery.ui.datepicker-ar.js"></script>';
+					$output.= '<script type="text/javascript" src="' . $this->CI->config->item('base_url') . 'assets/js/jquery.ui.datepicker-ar.js"></script>';
 				}
 			}
 
@@ -257,7 +257,7 @@ EOF;
 
 		if ( $this->CI->config->item('tinymce_loaded') != true )
 		{
-			$output.= '<script type="text/javascript" src="' . $this->CI->config->item('base_url') . 'application/views/backend/js/tinymce/jquery.tinymce.js"></script>';
+			$output.= '<script type="text/javascript" src="' . $this->CI->config->item('base_url') . 'assets/js/tinymce/jquery.tinymce.js"></script>';
 			$this->CI->config->set_item('tinymce_loaded', true);
 		}
 
@@ -271,7 +271,7 @@ EOF;
 					theme : "' . ( $this->me->fields->$field->input->attributes()->simple != 1 ? 'advanced' : 'simple' ) . '",';
 		$output.= <<<EOF
 							// Location of TinyMCE script
-							script_url : '{$this->CI->config->item('base_url')}application/views/backend/js/tinymce/tiny_mce.js',
+							script_url : '{$this->CI->config->item('base_url')}assets/js/tinymce/tiny_mce.js',
 
 							// Theme options
 							plugins : "safari,pagebreak,style,layer,table,save,advhr,advimage,advlink,emotions,iespell,inlinepopups,insertdatetime,preview,media,searchreplace,print,contextmenu,paste,directionality,fullscreen,noneditable,visualchars,nonbreaking,xhtmlxtras,template",

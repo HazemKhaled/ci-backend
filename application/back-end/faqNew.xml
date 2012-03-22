@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<faqNew>
+	<title>الأسئلة الجديدة</title>
+	<table>faq</table>
+	<pk>id</pk>
+	<order></order>
+	<main>title</main>
+	<where>answer like ''</where>
+	<limit>50</limit>
+	<tab>أريد حلاً</tab>
+	<block>أريد حلاً</block>
+	<option list="1" add="0" delete="1" edit="1" view="1" active="0" search="1" multi_add="0" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<cat>
+			<title>القسم</title>
+			<view>select</view>
+			<input>select</input>
+			<values table="faq_cat" value="id" output="name" order="cat asc" />
+			<search action="faqNew" in="cat" operator="=" search="cat" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</cat>
+		<asker>
+			<title>السائل</title>
+			<view>select</view>
+			<input>select_pop</input>
+			<values table="users" value="id" output="username" />
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</asker>
+		<showAsker>
+			<title>عرض اسم السائل</title>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</showAsker>
+		<answerer>
+			<title>المجيب</title>
+			<view>select</view>
+			<input>select_pop</input>
+			<values table="users" value="id" output="username" />
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</answerer>
+		<time>
+			<title>اضيف في</title>
+			<view>timestamp</view>
+			<input>timestamp</input>
+			<option list="0" add="1" multi_add="1" edit="0" view="1" search="0" />
+		</time>
+		<fixed>
+			<title>أسئلة مختارة</title>
+			<help>هل تريد وضع هذا العنصر في قائمة مختارات</help>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<option list="0" add="1" multi_add="1" edit="1" view="0" search="0" />
+		</fixed>
+		<title>
+			<title>العنوان</title>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</title>
+		<ask>
+			<title>السؤال</title>
+			<input>textarea</input>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</ask>
+		<answer>
+			<title>الإجابة</title>
+			<input>textarea</input>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</answer>
+	</fields>
+</faqNew>

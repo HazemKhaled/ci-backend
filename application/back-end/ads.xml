@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ads>
+	<title>بنرات</title>
+	<pk>id</pk>
+	<order>id</order>
+	<main>title</main>
+	<limit>30</limit>
+	<option list="1" add="1" delete="1" edit="1" view="1" active="0" search="1" multi_add="0" multi_edit="0" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<title>
+			<title>أسم الأعلان</title>
+			<input required="1">text</input>
+			<help>أسم مميز لا يظهر للزوار</help>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</title>
+		<place>
+			<title>المنطقة الأعلانية</title>
+			<view>select</view>
+			<input required="1">select</input>
+			<values header="الراعي" 
+					leaderboard="أعلى جميع الصفحات"
+					right="يمين جميع الصفحات (تحت القائمة ارئيسية)"
+					right1="يمين جميع الصفحات (تحت التصويت)"
+					bodyLeft="يسار الصفحات الداخلية"
+					index300top="الرئيسية: 300 بصدر الصفحة"
+					index300middle="الرئيسية: 300 بوسط الصفحة"
+					index728middle="الرئيسية: وسط الرئيسية" />
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</place>
+		<type>
+			<title>النوع</title>
+			<default>image</default>
+			<view>select</view>
+			<input>radio</input>
+			<values code="كود" flash="فلاش" image="صورة"/>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</type>
+		<alt>
+			<title>نص يظهر على الصورة</title>
+			<input>text</input>
+			<help>يستخدم في حالة أن نوع الأعلان صورة فقك ويظهر كـ alt</help>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</alt>
+		<width>
+			<title>عرض البنر</title>
+			<default>0</default>
+			<input>text</input>
+			<help>يستخدم في حالة أن نوع الأعلان صورة أو فلاش، وإذا تركته 0 سيظهر البنر بعرضه الحقيقي</help>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</width>
+		<height>
+			<title>طول البنر</title>
+			<default>0</default>
+			<input>text</input>
+			<help>يستخدم في حالة أن نوع الأعلان صورة أو فلاش، وإذا تركته 0 سيظهر البنر بطوله الحقيقي</help>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</height>
+		<start>
+			<title>تاريخ البدء</title>
+			<default>0000-00-00</default>
+			<input date="yy-mm-dd">text</input>
+			<help>أتركه خالي إذا أردت أن يبدأ فوراً</help>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</start>
+		<end>
+			<title>تاريخ الانتهاء</title>
+			<default>0000-00-00</default>
+			<input date="yy-mm-dd">text</input>
+			<help>أتركه خالي إذا أردت أن يظهر الأعلان دائماً</help>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</end>
+		<active>
+			<title>مفعل</title>
+			<default>1</default>
+			<view>select</view>
+			<input>radio</input>
+			<values hknumber1="نعم" hknumber0="لا" />
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</active>
+		<url>
+			<title>رابط الأعلان</title>
+			<input>text</input>
+			<help>يستخدم في حالة أن نوع الأعلان صورة فقط</help>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</url>
+		<src>
+			<title>مكان الصورة / الكود</title>
+			<help>ضع هنا الكود في حالة أن نوع الأعلان مود، او ضع رابط الصورة أو الفلاشة إذا كان نوع الاعلان صورة أو فلاش</help>
+			<input required="1" upload="1" allowed_types="gif|jpg|png|swf">textarea</input>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</src>
+	</fields>
+</ads>

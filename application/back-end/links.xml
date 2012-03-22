@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<links>
+	<title>تحكم قوائم الروابط</title>
+	<pk>id</pk>
+	<main>text</main>
+	<order>block, sort</order>
+	<block>أخرى</block>
+	<option list="1" add="1" delete="1" edit="1" view="0" active="0" search="1" multi_add="1" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<text>
+			<title>العنوان</title>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</text>
+		<href>
+			<title>الرابط</title>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</href>
+		<pic>
+			<title>ايقونة</title>
+			<input upload="1">text</input>
+			<option list="0" add="1" multi_add="0" edit="1" search="1" />
+		</pic>
+		<sort>
+			<title>ترتيب</title>
+			<default>0</default>
+			<input>text</input>
+			<option list="1" add="1" multi_add="0" edit="1" search="1" />
+		</sort>
+		<block>
+			<title>تابع لـ</title>
+			<view>select</view>
+			<input>select</input>
+			<values header="راس الصفحة" sidebar="القائمة الجانبية" footer="أسفل الموقع" service="خدمات حواء (رئيسية الموقع)" serviceLeft="خدمات حواء (يسار رئيسية الموقع)" />
+			<search action="links" in="block" operator="=" search="block" />
+			<option list="1" add="1" multi_add="0" edit="1" search="1" />
+		</block>
+		<attr>
+			<title>أضافات</title>
+			<help>سمات إضافية لتاج لتاج a الذي يكون الرابط</help>
+			<input>text</input>
+			<option list="0" add="1" multi_add="0" edit="1" search="1" />
+		</attr>
+	</fields>
+</links>

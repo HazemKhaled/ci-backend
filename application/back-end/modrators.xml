@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modrators>
+	<title>تحكم المشرفين</title>
+	<pk>id</pk>
+	<main>user</main>
+	<limit>50</limit>
+	<option list="1" add="1" delete="1" edit="1" view="0" active="0" search="1" multi_add="0" ajaxEdit="0" ajaxAdd="0" />
+	<fields>
+		<child>
+			<title> -- </title>
+			<type>0</type>
+			<default>صلاحيات</default>
+			<search action="backend-modrator-permissions" in="modrate_id" operator="=" search="id" />
+			<option list="1" add="0" multi_add="0" edit="0" view="0" search="0" />
+		</child>
+		<user>
+			<title>أسم المستخدم</title>
+			<input>text</input>
+			<option list="1" add="1" multi_add="1" edit="1" view="1" search="1" />
+		</user>
+		<pass>
+			<title>كلمة المرور</title>
+			<input md5="1">password</input>
+			<option list="0" add="1" multi_add="1" edit="1" view="1" search="0" />
+		</pass>
+		<mail>
+			<title>البريد الالكترونى</title>
+			<view>mailto</view>
+			<input>text</input>
+			<option list="1" add="1" multi_add="0" edit="1" view="1" search="1" />
+		</mail>
+	</fields>
+</modrators>
